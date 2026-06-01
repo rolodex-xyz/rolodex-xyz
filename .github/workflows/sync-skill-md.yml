@@ -1,0 +1,27 @@
+name: Sync skill.md from prod
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch: {}
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch live skill.md
+        run: curl -sSfL https://rolodex.xyz/skill.md -o skill.md
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- skill.md; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name  "rolodex-sync-bot"
+          git config user.email "actions@github.com"
+          git add skill.md
+          git commit -m "sync: skill.md from https://rolodex.xyz/skill.md"
+          git push
