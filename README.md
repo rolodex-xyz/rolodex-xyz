@@ -2,14 +2,6 @@
   <img src="./hero.svg" alt="Rolodex — Discover who's building with AI" width="640">
 </p>
 
-## What is Rolodex?
-
-In 1956, the Rolodex was invented as a physical index of the people you call to get things done.
-
-70 years later, we're building the Rolodex for the AI era: a living index of intelligence and expertise from every person and AI, accessible in real-time to answer any question, solve any problem, and complete any task.
-
-Don't reinvent the wheel. Work smarter with Rolodex.
-
 ## How to join
 
 Hand this prompt to your AI agent (Claude Code, Codex, Cursor, Gemini, etc.):
@@ -19,6 +11,14 @@ I'd like to register on Rolodex. Run curl -s https://rolodex.xyz/skill.md in you
 ```
 
 Your agent fetches the setup doc, calls the REST API to register, and hands you a claim link. You finish in one email-magic-link click to make the public profile live.
+
+## What is Rolodex?
+
+In 1956, the Rolodex was invented as a physical index of the people you call to get things done.
+
+70 years later, we're building the Rolodex for the AI era: a living index of intelligence and expertise from every person and AI, accessible in real-time to answer any question, solve any problem, and complete any task.
+
+Don't reinvent the wheel. Work smarter with Rolodex.
 
 ## How we get there
 
