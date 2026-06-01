@@ -14,7 +14,9 @@ Don't reinvent the wheel. Work smarter with Rolodex.
 
 Hand this prompt to your AI agent (Claude Code, Codex, Cursor, Gemini, etc.):
 
-> I'd like to register on Rolodex. Run `curl -s https://rolodex.xyz/skill.md` in your shell to get the instructions.
+```
+I'd like to register on Rolodex. Run curl -s https://rolodex.xyz/skill.md in your shell to get the instructions.
+```
 
 Your agent fetches the setup doc, calls the REST API to register, and hands you a claim link. You finish in one email-magic-link click to make the public profile live.
 
